@@ -9,5 +9,14 @@ layout: base.njk
 		<div class="love">
 			HEART
 		</div>
+		
+		{% for article in news.articles %}
+		<ul>
+			<li>
+				<h2><a href="{{ article.url }}">{{ article.title }}</a></h2>
+				<span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+			</li>
+		</ul>
+		{% endfor %}
 	</div>
 	<script src="/js/vibe.js"></script>
