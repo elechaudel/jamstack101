@@ -1,0 +1,13 @@
+{
+  "name": "jamstack-ex3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vibe.js",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
