@@ -1,0 +1,14 @@
+---
+permalink: _redirects
+---
+
+<!-- NETLIFY | Routing > Redirect options > Redirect by country or language  -->
+
+{% for item in news %}
+/ /{{ item.country }}/index.html 200 Country={{ item.country }}
+{% endfor %}
+
+<!-- NETLIFY | Routing > Redirect options > Custom 404 page handling  -->
+<!-- Used here for a fallback page -->
+
+/   /gb/index.html   404
