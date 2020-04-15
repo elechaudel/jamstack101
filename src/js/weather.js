@@ -9,7 +9,7 @@ function success(pos) {
     .then((data) => {
 
       document.querySelector('#city').textContent = data.name;
-      document.querySelector('#temp').textContent = data.main.temp;
+      // document.querySelector('#temp').textContent = data.main.temp;
       document.querySelector('#main').textContent = data.weather[0].main;
       document.querySelector('#desc').textContent = data.weather[0].description;
 
